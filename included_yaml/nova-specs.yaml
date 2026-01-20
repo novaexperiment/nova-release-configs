@@ -1,0 +1,8 @@
+definitions:
+- specs_nova:
+  - novasoft %build_compiler
+  - py-ipykernel %build_compiler
+  - fife-utils %build_compiler
+  - nova-fcl %build_compiler
+  - nova-production %build_compiler
+
