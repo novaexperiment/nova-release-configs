@@ -31,7 +31,7 @@ spack:
   - path: https://raw.githubusercontent.com/novaexperiment/nova-release-configs/refs/heads/main/included_yaml/nova-packages.yaml
     sha256: 28322efa7f843d5b12ee53c0b3b9db8216a54928aa5aedae401d1993bdf1c9f9
   - path: https://raw.githubusercontent.com/novaexperiment/nova-release-configs/refs/heads/main/included_yaml/nova-specs.yaml
-    sha2456: 3810add24ab3ee1dfe0751b48f011f7434f478e610b552abe8f31a36b0062d7c
+    sha256: 3810add24ab3ee1dfe0751b48f011f7434f478e610b552abe8f31a36b0062d7c
 
   specs:
     - $fife_specs
