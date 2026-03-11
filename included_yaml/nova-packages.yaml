@@ -1,10 +1,4 @@
 packages:
-  # system packages
-  openssl:
-    externals:
-    - spec: openssl @3.3.2 os=almalinux9 %gcc@11
-      prefix: /usr
-    buildable: false
 
   cetmodules:
     require: '@3'
