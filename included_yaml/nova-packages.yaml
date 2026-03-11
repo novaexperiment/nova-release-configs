@@ -3,19 +3,6 @@ packages:
   cetmodules:
     require: '@3'
 
-  # art requirements
-  messagefacility:
-    require:
-    - '@2.10'
-    - cxxstd=20
-  canvas:
-    require:
-    - '@3.16'
-    - cxxstd=20
-  art:
-    require:
-    - '@3.14'
-    - cxxstd=20
   sundials:
     require:
     - '@6.1'
