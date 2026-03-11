@@ -19,6 +19,12 @@ packages:
   novasoft:
     require:
     - '@spack-develop'
+  nugen:
+    require:
+    - "@1.22.03"
+  nusystematics:
+    require:
+    - "@02.00.05"
   py-tensorflow:
     require:
     - +cuda
