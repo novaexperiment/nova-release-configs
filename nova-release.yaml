@@ -29,7 +29,6 @@ spack:
 
   specs:
     - $specs_nova
-    - $specs_nusofthep
     - $specs_art
     - $fife_specs
 
