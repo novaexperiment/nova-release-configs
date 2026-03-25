@@ -29,6 +29,9 @@ packages:
   nusystematics:
     require:
     - "@02.00.05"
+  python:
+    require:
+    - "@3.10"
   py-tensorflow:
     require:
     - +cuda
