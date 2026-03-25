@@ -5,27 +5,27 @@ spack:
 
   include:
 
-  # Toolchain
-  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/gcc-12-toolchain.yaml
-    sha256: b769ddee1cff92c88b22cc968bc192a37d5fe863e6e224aeac5697a89480c5ca
-
   # NOvA
-  - path: https://raw.githubusercontent.com/novaexperiment/nova-release-configs/refs/heads/main/included_yaml/nova-packages.yaml
-    sha256: fae26b2fc77bf8accc02413d129e2431f3e6084e5ec7856bc30562e33e61fc9e
-  - path: https://raw.githubusercontent.com/novaexperiment/nova-release-configs/refs/heads/main/included_yaml/nova-specs.yaml
-    sha256: 3810add24ab3ee1dfe0751b48f011f7434f478e610b552abe8f31a36b0062d7c
+  - git: https://github.com/novaexperiment/nova-release-configs
+    branch: main
+    paths:
+    - included_yaml/nova-packages.yaml
+    - included_yaml/nova-specs.yaml
 
-  # art
-  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/packages-art.yaml
-    sha256: 32bfd398fcb27780263e6d593decbad885995b43852ccaf15788d82c7aed49de
-  - path: https://raw.githubusercontent.com/art-framework-suite/art-release-configs/refs/tags/art-3.14.04/included_yaml/specs-art.yaml
-    sha256: 16e776ee6fea578385fe5ccfd67924fdb442f9219ea0cf3beaad5f6a211b7281
+  # Art
+  - git: https://github.com/art-framework-suite/art-release-configs
+    tag: art-3.14.04
+    paths:
+    - included_yaml/gcc-12-toolchain.yaml
+    - included_yaml/packages-art.yaml
+    - included_yaml/specs-art.yaml
 
   # FIFE
-  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.1/included_yaml/fife_packages.yaml
-    sha256: db6b29551f8a94ffab1ca7f3457ba9da47da5d4fa9b62f6ba2b81ea660118bcb
-  - path: https://github.com/fnal-fife/fife-release-configs/raw/refs/tags/2.8.0.1/included_yaml/fife_specs.yaml
-    sha256: 080dececfa749775969fe1f8b94ec8779c8143b5939aaf0f83390303c39ff110
+  - git:  https://github.com/fnal-fife/fife-release-configs
+    branch: main
+    paths:
+    - included_yaml/fife_packages.yaml
+    - included_yaml/fife_specs.yaml
 
   specs:
     - $specs_nova
