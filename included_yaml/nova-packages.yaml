@@ -1,60 +1,80 @@
 packages:
 
   cetmodules:
-    require: '@3'
+    require:
+    - "@3"
 
   sundials:
     require:
-    - '@6.1'
+    - "@6.1"
     - ~examples
     - ~examples-install
+  artdaq-core:
+    require:
+    - "@v3_11_01"
+    - ~bundle
   cafanacore:
-    require: '@1'
+    require:
+    - "@1"
   geant4:
-    require: '@11.0'
+    require:
+    - "@11.0"
   geant4reweight:
     require:
-    - "@01.22.02"
+    - "@=01.22.02"
     - "experiment=nova"
   genie:
     require:
-    - '@3.6'
+    - "@3.6"
     - cxxstd=17
   novasoft:
     require:
-    - '@spack-develop'
+    - "@=spack-develop"
+  nug4:
+    require:
+    - "@=1.16.08"
   nugen:
     require:
-    - "@1.22.03"
+    - "@=1.22.03"
+  nurandom:
+    require:
+    - "@=1.11.05"
+  nusimdata:
+    require:
+    - "@=1.29.00"
   nusystematics:
     require:
-    - "@02.00.05"
+    - "@=02.00.05"
+  nutools:
+    require:
+    - "@=3.17.01"
   py-tensorflow:
     require:
+    - "@=2.17.1"
     - +cuda
     - cuda_arch=80
   py-torch:
     require:
+    - "@2.7:"
     - +cuda
     - cuda_arch=80
   py-cupy:
     require:
-    - '@=13.4.1'
+    - "@=13.4.1"
     - +cuda
     - cuda_arch=80
   py-cudf:
     require:
-    - '@=25.4.0'
+    - "@=25.4.0"
   py-cuml:
     require:
-    - '@=25.4.0'
+    - "@=25.4.0"
   py-rmm:
     require:
-    - '@=25.04.00'
+    - "@=25.04.00"
   py-nugraph:
     require:
-    - '@=25.4.0'
+    - "@=25.4.0"
 
   cuda:
-    require: '@12.6'
-
+    require: "@12.6"
