@@ -25,12 +25,10 @@ spack:
     branch: main
     paths:
     - included_yaml/fife_packages.yaml
-    - included_yaml/fife_specs.yaml
 
   specs:
     - $specs_nova
     - $specs_art
-    - $fife_specs
 
   upstreams:
     cvmfs-larsoft:
