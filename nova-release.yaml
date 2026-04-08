@@ -6,25 +6,25 @@ spack:
   include:
 
   # NOvA
-  - git: "https://github.com/novaexperiment/nova-release-configs"
-    branch: "main"
+  - git: https://github.com/novaexperiment/nova-release-configs
+    branch: main
     paths:
-    - "included_yaml/nova-packages.yaml"
-    - "included_yaml/nova-specs.yaml"
+    - included_yaml/nova-packages.yaml
+    - included_yaml/nova-specs.yaml
 
   # Art
-  - git: "https://github.com/art-framework-suite/art-release-configs"
-    tag: "art-3.14.04"
+  - git: https://github.com/art-framework-suite/art-release-configs
+    tag: art-3.14.04
     paths:
-    - "included_yaml/gcc-12-toolchain.yaml"
-    - "included_yaml/packages-art.yaml"
-    - "included_yaml/specs-art.yaml"
+    - included_yaml/gcc-12-toolchain.yaml
+    - included_yaml/packages-art.yaml
+    - included_yaml/specs-art.yaml
 
   # FIFE
-  - git:  "https://github.com/fnal-fife/fife-release-configs"
-    branch: "main"
+  - git:  https://github.com/fnal-fife/fife-release-configs
+    branch: main
     paths:
-    - "included_yaml/fife_packages.yaml"
+    - included_yaml/fife_packages.yaml
 
   specs:
     - $specs_nova
